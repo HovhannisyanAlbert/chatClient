@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #ecf0f1;
+  --message-background-color: #ffffff;
+  --message-border-color: #bdc3c7;
+  --text-color: #2c3e50;
+  --placeholder-color: #95a5a6;
+  --button-color: #e74c3c;
+  --button-hover-color: #c0392b;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.messager {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: var(--message-background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--message-border-color);
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userName {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.time {
+  font-size: 0.8em;
+  color: var(--placeholder-color);
+}
+
+.messageContainer {
+  padding: 10px;
+}
+
+.messageText {
+  background-color: var(--primary-color);
+  color: var(--message-background-color);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--message-border-color);
+  background-color: var(--message-background-color);
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--message-border-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+}
+
+.bttn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--message-background-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bttn:hover {
+  background-color: var(--primary-color);
+}
+
+.wrapperExit {
+  text-align: right;
+  padding: 10px;
+  background-color: var(--message-background-color);
+  border-top: 1px solid var(--message-border-color);
+}
+
+.exit {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--message-background-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exit:hover {
+  background-color: var(--button-hover-color);
+}
+.roomName {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome {
+  margin: 0;
+  font-size: 1.5em;
+  color: var(--message-background-color);
+  font-weight: bold;
+}

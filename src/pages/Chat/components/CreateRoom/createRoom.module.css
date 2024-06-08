@@ -1,0 +1,50 @@
+/* styles.module.css */
+
+.createRoomWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.createButton {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.createButton:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.back {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4caf50; /* Green */
+  transition: color 0.3s;
+}
+
+.back:hover {
+  color: #45a049; /* Darker Green */
+}

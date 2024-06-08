@@ -1,0 +1,77 @@
+.chatWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
+}
+
+.info span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.notAccount {
+  animation: slideInLeft 1s ease;
+}
+
+.linkWrapper {
+  animation: slideInRight 1s ease;
+}
+
+.linkUser,
+.createRoom {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.linkUser:hover,
+.createRoom:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
